@@ -3,6 +3,6 @@ from ssg.site import Site
 
 def main(source="content", dest="dist"):
     config = {"source" : source, "dest" : dest}
-    Site(config["source"], config["dest"]).build() #can also use ** to unpack dictionaries
+    Site(**config).build() #** unpacks dictonaries
     
 typer.run(main)
