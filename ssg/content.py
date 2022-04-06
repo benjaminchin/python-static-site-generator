@@ -15,7 +15,3 @@ class Content(Mapping):
     def __init__(self, metadata, content):
         data = metadata
         content = {"content" : self.data}
-
-    class type(property):
-    
-
